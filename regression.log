@@ -1,0 +1,60 @@
+RuntimeFactor -- Draft Version
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          RuntimeFactor   R-squared:                       0.925
+Model:                            OLS   Adj. R-squared:                  0.920
+Method:                 Least Squares   F-statistic:                     170.7
+Date:                Mon, 16 Mar 2020   Prob (F-statistic):           2.59e-30
+Time:                        18:44:48   Log-Likelihood:               -0.86006
+No. Observations:                  60   AIC:                             11.72
+Df Residuals:                      55   BIC:                             22.19
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+Intercept                1.7200      0.105     16.433      0.000       1.510       1.930
+IsMultiDC[T.True]        0.1216      0.096      1.266      0.211      -0.071       0.314
+Workers                 -0.0040      0.002     -1.974      0.053      -0.008    6.19e-05
+MultiNodeCount          -0.0831      0.031     -2.663      0.010      -0.146      -0.021
+TotalNetworkDistance  6.338e-05   3.09e-06     20.488      0.000    5.72e-05    6.96e-05
+==============================================================================
+Omnibus:                       28.502   Durbin-Watson:                   1.646
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               95.623
+Skew:                           1.226   Prob(JB):                     1.72e-21
+Kurtosis:                       8.678   Cond. No.                     5.08e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.08e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+RuntimeFactorAllDummy -- Published Version
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          RuntimeFactor   R-squared:                       0.925
+Model:                            OLS   Adj. R-squared:                  0.920
+Method:                 Least Squares   F-statistic:                     170.7
+Date:                Mon, 16 Mar 2020   Prob (F-statistic):           2.59e-30
+Time:                        18:44:48   Log-Likelihood:               -0.86006
+No. Observations:                  60   AIC:                             11.72
+Df Residuals:                      55   BIC:                             22.19
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+Intercept                    1.7200      0.105     16.433      0.000       1.510       1.930
+IsMultiNode[T.True]         -0.2493      0.094     -2.663      0.010      -0.437      -0.062
+IsMultiDC[T.True]            0.2167      0.094      2.314      0.024       0.029       0.404
+IsMultiContinent[T.True]     1.9180      0.094     20.488      0.000       1.730       2.106
+Workers                     -0.0040      0.002     -1.974      0.053      -0.008    6.19e-05
+==============================================================================
+Omnibus:                       28.502   Durbin-Watson:                   1.646
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               95.623
+Skew:                           1.226   Prob(JB):                     1.72e-21
+Kurtosis:                       8.678   Cond. No.                         167.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
